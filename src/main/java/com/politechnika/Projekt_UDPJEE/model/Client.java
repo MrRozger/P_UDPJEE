@@ -14,6 +14,8 @@ public abstract class Client {
     private String firstName;
     private String lastName;
 
+    private Vehicle vehicle;
+
     public Long getId() {
         return id;
     }
@@ -36,5 +38,13 @@ public abstract class Client {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 }
