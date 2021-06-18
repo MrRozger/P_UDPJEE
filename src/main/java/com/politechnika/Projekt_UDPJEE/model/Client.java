@@ -16,6 +16,9 @@ public abstract class Client {
 
     private Vehicle vehicle;
 
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    private Address address;
+
     public Long getId() {
         return id;
     }
@@ -46,5 +49,13 @@ public abstract class Client {
 
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
