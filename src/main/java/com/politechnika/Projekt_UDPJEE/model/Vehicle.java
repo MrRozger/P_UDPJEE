@@ -9,12 +9,10 @@ public class Vehicle {
 
     private String model;
 
-
     public enum Type {
         SPORT,
         ECO,
         MINI_VAN
-
     }
 
     @Enumerated(EnumType.STRING)
